@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* general */
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+h1{
+  font-size: 52px;
+  font-weight: 700;
+}
+.dark-mode{
+  color: #fff;
+  background-color: #242424;
+}
+body .bx-sun,
+.dark-mode .bx-moon{
+  display: none;
+}
+.dark-mode .bx-sun{
+  display: flex;
+}
+.dark-mode .menu a,
+.dark-mode .menu button,
+.dark-mode header li{
+  border-color: #fff;
+}
+.dark-mode .menu a,
+.dark-mode .menu button,
+.dark-mode a{
+  color: #fff;
+}
+/* header */
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  gap: 20px;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+header li{
+  border: solid 2px #000000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.hex:hover{  background-color: #A0EEFF; }
+.rgb:hover{  background-color: #FFFBA0; }
+.quo:hover{  background-color: #FFA0D9; }
+.chro:hover{  background-color: #FFA0A0; }
+.to-do:hover{  background-color: #ADFFA0; }
+
+.dark-mode .hex:hover{  background-color: #14B7DB; }
+.dark-mode .rgb:hover{  background-color: #FAB225; }
+.dark-mode .quo:hover{  background-color: #EF37A6; }
+.dark-mode .chro:hover{  background-color: #F44747; }
+.dark-mode .to-do:hover{  background-color: #64E038; }
+/* menu */
+.menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  gap: 20px;
+}
+.menu a,
+.menu button{
+  border: solid 1.5px #000000;
+  border-radius: 100%;
+  padding: 8px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background: none;
+  box-sizing: border-box;
+}
+.menu a:hover { background-color: #ADA0FF; }
+.dark-mode .menu a:hover { background-color: #5E4FB6; }
+.menu .bx{
+  font-size: 25px;
+}
