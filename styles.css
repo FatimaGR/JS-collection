@@ -12,12 +12,24 @@ a{
 }
 h1{
   font-size: 52px;
-  font-weight: 700;
+  font-weight: 800;
+  text-align: center;
+}
+.visible{
+  opacity: 1;
+  visibility: visible;
+}
+main{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .dark-mode{
   color: #fff;
   background-color: #242424;
 }
+.options-button,
 body .bx-sun,
 .dark-mode .bx-moon{
   display: none;
@@ -35,24 +47,32 @@ body .bx-sun,
 .dark-mode a{
   color: #fff;
 }
+.dark-mode header li{
+  background-color: #242424;
+}
 /* header */
 header{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding: 3%;
   gap: 20px;
 }
 header ul{
   display: flex;
+  flex-flow: wrap;
+  justify-content: center;
   list-style: none;
-  gap: 15px;
+  gap: 20px;
 }
 header li{
+  background-color: #fff;
   border: solid 2px #000000;
   border-radius: 5px;
   padding: 5px 10px;
   font-weight: 500;
+  text-align: center;
+  height:fit-content;
 }
 .hex:hover{  background-color: #A0EEFF; }
 .rgb:hover{  background-color: #FFFBA0; }
@@ -85,8 +105,30 @@ header li{
   background: none;
   box-sizing: border-box;
 }
-.menu a:hover { background-color: #ADA0FF; }
-.dark-mode .menu a:hover { background-color: #5E4FB6; }
+.menu a:hover,
+.menu button:hover {
+ background-color: #ADA0FF; 
+}
+.dark-mode .menu a:hover,
+.dark-mode .menu button:hover { 
+  background-color: #5E4FB6; 
+}
 .menu .bx{
   font-size: 25px;
+}
+
+@media (max-width: 430px){
+  .options-button{
+    display: flex;
+  }
+  header ul{
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 40px;
+    right: 110px;
+  }
 }

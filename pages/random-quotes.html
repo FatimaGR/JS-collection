@@ -10,7 +10,7 @@
 <body>
   <header>
     <h1>JS collection</h1>
-    <ul>
+    <ul class="options">
       <li class="hex"><a href="hexadecimal-colors.html">Hexadecimal colors</a></li>
       <li class="rgb"><a href="rgb-colors.html">RGB color selector</a></li>
       <li class="quo"><a href="random-quotes.html">Random quotes</a></li>
@@ -19,15 +19,18 @@
     </ul>
   </header>
   <div class="menu">
+    <button class="options-button">
+      <i class='bx bx-menu'></i>
+    </button>
     <a href="../index.html"><i class='bx bx-home'></i></a>
-    <button id="mode-button">
+    <button class="mode-button">
       <i class='bx bx-sun' ></i>
       <i class='bx bx-moon' ></i>
     </button>
-    <main>
-      <h2>Random quotes</h2>
-    </main>
   </div>
+  <main>
+    <h2>Random quotes</h2>
+  </main>
 </body>
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </html>

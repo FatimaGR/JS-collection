@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/home.css">
   <title>JS collection</title>
 </head>
 <body>
   <header>
     <h1>JS collection</h1>
-    <ul>
+    <ul class="options">
       <li class="hex"><a href="pages/hexadecimal-colors.html">Hexadecimal colors</a></li>
       <li class="rgb"><a href="pages/rgb-colors.html">RGB color selector</a></li>
       <li class="quo"><a href="pages/random-quotes.html">Random quotes</a></li>
@@ -19,12 +20,41 @@
     </ul>
   </header>
   <div class="menu">
+    <button class="options-button">
+      <i class='bx bx-menu'></i>
+    </button>
     <a href="index.html"><i class='bx bx-home'></i></a>
-    <button id="mode-button">
+    <button class="mode-button">
       <i class='bx bx-sun' ></i>
       <i class='bx bx-moon' ></i>
     </button>
   </div>
+  <main>
+    <div class="container">
+      <div class="profile">
+        <div class="photo">
+          <img src="images/github-image.jpeg" alt="github image">
+        </div>
+        <p class="name">Fatima Gallardo</p>
+        <div class="links">
+          <a href="https://github.com/FatimaGR">Gihtub</a>
+          <a href="https://porfolio-website-gules.vercel.app">Portfolio</a>
+        </div>
+      </div>
+      <div class="description">
+        <h3>Hi! Welcome to my JS collection</h3>
+        <p>I’m Fatima, a Jr Front-end developer.<br>
+          Here you can found some projects made with JS vanilla.</p>
+        <ul>
+          <li>Random hexadecimal color generator</li>
+          <li>RGB color selector with sliders</li>
+          <li>Random quote generator</li>
+          <li>Chronometer</li>
+          <li>To do app</li>
+        </ul>
+      </div>
+    </div>
+  </main>
 </body>
 <script src="main.js"></script>
 </html>
