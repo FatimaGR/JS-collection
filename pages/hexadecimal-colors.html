@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../styles/hexadecimal-colors.css">
   <link rel="stylesheet" href="../styles.css">
   <title>Hexadecimal colors</title>
 </head>
@@ -29,8 +30,23 @@
     </button>
   </div>
   <main>
-    <h2>Hexadecimal colors</h2>
+    <div class="container">
+      <div class="cards">
+        <div class="card c-one">
+          <div id="hex-color" class="color one"></div>
+          <p id="hex-num">#05D6B8</p>
+        </div>
+        <div class="card c-two">
+          <div class="color two"></div>
+        </div>
+        <div class="card c-three">
+          <div class="color three"></div>
+        </div>
+      </div>
+      <button id="cbutton">Change color</button>
+    </div>
   </main>
 </body>
 <script src="../main.js"></script>
+<script src="../js-files/hexadecimal-colors.js"></script>
 </html>
