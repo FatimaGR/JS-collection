@@ -6,6 +6,9 @@
   font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
+body{
+  transition: all 0.7s;
+}
 a{
   text-decoration: none;
   color: #000000;
@@ -47,7 +50,9 @@ body .bx-sun,
 .dark-mode a{
   color: #fff;
 }
-.dark-mode header li{
+.dark-mode header li,
+.dark-mode .menu a,
+.dark-mode .menu button{
   background-color: #242424;
 }
 /* header */
@@ -67,7 +72,7 @@ header ul{
 }
 header li{
   background-color: #fff;
-  border: solid 2px #000000;
+  border: solid 1.5px #000000;
   border-radius: 5px;
   padding: 5px 10px;
   font-weight: 500;
@@ -90,20 +95,20 @@ header li{
 .menu{
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 40px;
   gap: 20px;
 }
 .menu a,
 .menu button{
+  background-color: #fff;
   border: solid 1.5px #000000;
   border-radius: 100%;
   padding: 8px;
   width: 45px;
   height: 45px;
   cursor: pointer;
-  background: none;
   box-sizing: border-box;
 }
 .menu a:hover,
@@ -128,7 +133,7 @@ header li{
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     right: 110px;
   }

@@ -29,7 +29,18 @@
     </button>
   </div>
   <main>
-    <h2>RGB color selector</h2>
+    <div class="card">
+      <div class="color"></div>
+      <div class="sliders">
+        <div class="slider">
+          <label for="red">
+            <p>Red</p>
+            <p id="rgb-num"></p>
+          </label>
+          <input id="red" type="range" min="0" max="225" value="" step="1">
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 <script src="../main.js"></script>
