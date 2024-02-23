@@ -99,6 +99,7 @@ header li{
   bottom: 40px;
   right: 40px;
   gap: 20px;
+  z-index: 100;
 }
 .menu a,
 .menu button{
@@ -136,5 +137,6 @@ header li{
     position: fixed;
     bottom: 40px;
     right: 110px;
+    z-index: 99;
   }
 }

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../styles/rgb-colors.css">
   <link rel="stylesheet" href="../styles.css">
   <title>RGB color selector</title>
 </head>
@@ -30,18 +31,39 @@
   </div>
   <main>
     <div class="card">
-      <div class="color"></div>
+      <div id="rgb-color" class="color"></div>
       <div class="sliders">
         <div class="slider">
           <label for="red">
             <p>Red</p>
-            <p id="rgb-num"></p>
+            <p id="r-num"></p>
           </label>
-          <input id="red" type="range" min="0" max="225" value="" step="1">
+          <div class="input-border">
+            <input id="red" type="range" min="0" max="255" value="243" step="1">
+          </div>
+        </div>
+        <div class="slider">
+          <label for="green">
+            <p>Green</p>
+            <p id="g-num"></p>
+          </label>
+          <div class="input-border">
+            <input id="green" type="range" min="0" max="255" value="255" step="1">
+          </div>
+        </div>
+        <div class="slider">
+          <label for="blue">
+            <p>Blue</p>
+            <p id="b-num"></p>
+          </label>
+          <div class="input-border">
+            <input id="blue" type="range" min="0" max="255" value="103" step="1">
+          </div>
         </div>
       </div>
     </div>
   </main>
 </body>
 <script src="../main.js"></script>
+<script src="../js-files/rgb-colors.js"></script>
 </html>
