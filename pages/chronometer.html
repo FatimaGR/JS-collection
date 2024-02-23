@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../styles/chronometer.css">
   <link rel="stylesheet" href="../styles.css">
   <title>Chronometer</title>
 </head>
@@ -29,8 +30,27 @@
     </button>
   </div>
   <main>
-    <h2>Chronometer</h2>
+    <div class="card">
+      <div class="chronometer">
+        <div class="num-time">
+          <p id="hours">0</p>
+        </div>
+        <h3>:</h3>
+        <div class="num-time">
+          <p id="minutes">0</p>
+        </div>
+        <h3>:</h3>
+        <div class="num-time">
+          <p id="seconds">0</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="play-stop">Play</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
   </main>
 </body>
 <script src="../main.js"></script>
+<script src="../js-files/chronometer.js"></script>
 </html>
