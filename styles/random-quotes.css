@@ -1,0 +1,53 @@
+.card{
+  border: solid 2px #000000;
+  border-radius: 10px;
+  max-width: 344px;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.bx-heart{
+  border: solid 1.5px #000000;
+  border-radius: 100%;
+  padding: 8px 7px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 25px;
+}
+.author{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+h2{
+  font-size: 24px;
+  font-weight: 700;
+}
+button{
+  border: solid 1.5px #000;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 18px;
+  background-color: #FFA0D9;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.dark-mode .bx-heart,
+.dark-mode .card,
+.dark-mode button{
+  border-color: #fff;
+}
+.dark-mode button{
+  color: #fff;
+  background-color: #EF37A6;
+}

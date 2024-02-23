@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../styles/random-quotes.css">
   <link rel="stylesheet" href="../styles.css">
   <title>Random quotes</title>
 </head>
@@ -29,8 +30,17 @@
     </button>
   </div>
   <main>
-    <h2>Random quotes</h2>
+    <div class="card">
+      <div class="author">
+        <i class='bx bx-heart'></i>
+        <h4 id="author"></h4>
+      </div>
+      <h2 id="quote"></h2>
+      <button id="button">Next quote</button>
+    </div>
   </main>
 </body>
 <script src="../main.js"></script>
+<script src="../js-files/quotes.js"></script>
+<script src="../js-files/random-quotes.js"></script>
 </html>
