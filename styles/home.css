@@ -69,3 +69,8 @@
 .dark-mode .links a{
   border-color: #fff;
 }
+@media (max-width: 430px){
+  .description{
+    max-width: 90%;
+  }
+}

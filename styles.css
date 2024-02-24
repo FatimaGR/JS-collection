@@ -139,4 +139,17 @@ header li{
     right: 110px;
     z-index: 99;
   }
+  .menu a,
+  .menu button{
+    width: 40px;
+    height: 40px;
+  }
+  .menu .bx{
+    font-size: 20px;
+  }
+  .menu{
+    bottom: 20px;
+    right: 20px;
+    gap: 10px;
+  }
 }
