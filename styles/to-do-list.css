@@ -1,5 +1,6 @@
 .container{
   width: 340px;
+  max-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +17,7 @@
   color: #000;
   outline: none;
   font-size: 20px;
+  max-width: 80%;
 }
 .new-task input::placeholder{
   color: #000;
@@ -27,4 +29,58 @@
   border: solid 2px #000;
   border-radius: 5px;
   cursor: pointer;
+}
+.list{
+  border: solid 2px #000;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.task{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.task p{
+  width: 100%;
+}
+.task .bx-trash,
+.task .bx-check-square{
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: fit-content
+}
+.task .bx-trash:hover,
+.task .bx-check-square:hover{
+  background-color: #ADFFA0;
+}
+.completed{
+  text-decoration:line-through;
+}
+.center{
+  text-align: center;
+}
+.dark-mode button,
+.dark-mode .new-task input,
+.dark-mode .new-task input::placeholder{
+  color: #fff;
+}
+.dark-mode button,
+.dark-mode .list{
+  border-color: #fff;
+}
+.dark-mode .task .bx-trash:hover,
+.dark-mode .task .bx-check-square:hover,
+.dark-mode button{
+  background-color: #64E038;
+}
+@media (max-width: 570px){
+  
 }
