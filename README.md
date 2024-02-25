@@ -1,4 +1,5 @@
 <h1 align="center">JS-collection</h1>
+<p align="center">A responsive collection of some projects made with vanilla JS.</p>
 
 ## Table of contents
 - [Overview](#overview)
@@ -19,7 +20,7 @@
 ![](/images/home.png)
 
 ### Links
-- Live Site URL: [JS collection](https://ghibli-films-fg.vercel.app)
+- Live Site URL: [JS collection](https://js-collection-fatimagr.vercel.app)
 - Code in Github: [https://github.com/FatimaGR/JS-collection](https://github.com/FatimaGR/JS-collection)
 
 ### Built With
